@@ -1,8 +1,10 @@
 <template>
-  <Valor v-for="valor in valores"
-         :title="valor.title"
-         :text="valor.text"
-         :key="valor"/>
+	<div class="space-y-4">
+		<Valor v-for="valor in valores"
+			:title="valor.title"
+			:text="valor.text"
+			:key="valor"/>
+	</div>
 </template>
 
 <script> 
