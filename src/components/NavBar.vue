@@ -32,6 +32,7 @@ export default {
     top: 0px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
+
   @media only screen and (min-width: 900px) {
     .nav-bar {
       /* background-color: lightblue; */
