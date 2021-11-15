@@ -21,8 +21,9 @@
 			</div>
 		</li>
 		<li class="flex-column sm:flex gap-4 p-4 rounded-lg border-2 border-gray-200 cursor-pointer transition hover:shadow-md">
-			<div class="w-44 h-44 mx-auto bg-blue-500 rounded-full"></div>
+			<img class="object-cover w-44 h-44 rounded-full" src="@/assets/carlos.png"/>
 			<div class="flex-1 my-auto space-y-2">
+
 				<h3 class="text-lg text-center sm:text-left font-medium">Carlos Fernando Arcia Castro</h3>
 				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
 				accusantium ducimus similique iure rem atque nihil repudiandae fugit
