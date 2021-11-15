@@ -12,9 +12,9 @@ export default {
   data() {
     return {
       sections: {
-        "Quienes Somos": "",
-        "Nuestra Mision": "",
-        "Valores": ""
+        "Quienes Somos": "/quienes_somos",
+        "Nuestra Mision": "/mision",
+        "Valores": "/valores"
       }
     }
   }
