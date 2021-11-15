@@ -1,6 +1,6 @@
 <template>
   <h1> Solar Solutions </h1>
-  <img src="@/assets/Logo.jpeg"/>
+  <img src="@/assets/Logo2.jpeg"/>
   <p>
     Somos una empresa nicaraguense dedicada a la instalacion y venta de 
     paneles solares. Nos especializamos en proyectos domiciliares y para la
