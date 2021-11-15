@@ -1,6 +1,6 @@
 <template>
   <NavBar/>
-	<main class="container max-w-4xl mx-auto my-8">
+	<main class="container max-w-4xl mx-auto my-8 px-4 sm:px-8">
 		<router-view/>
 	</main>
 </template>
