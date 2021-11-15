@@ -1,5 +1,7 @@
 <template>
-	<div :class="image">
+	<div>
+		<h1> {{title}} </h1>
+		{{text}}
 	</div>
 </template>
 
@@ -9,7 +11,7 @@ export default {
 		return {
 		}
 	},
-	props: ['image', 'title', 'text']
+	props: ['title', 'text']
 }
 </script>
 
