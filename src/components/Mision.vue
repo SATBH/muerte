@@ -32,6 +32,9 @@
       organización, enfocándonos a incrementar la eficiencia y ahorro en la
       utilización de la energía renovables. 
     </p>
+    <div class="image">
+      <img src="@/assets/paneles-solares.jpg"/>
+    </div>
   </div>
 </template>
 
@@ -44,4 +47,13 @@
   p {
     text-align: justify;
   }
+
+  .image {
+    background-color: white;
+  }
+
+  img {
+    width: 300px;
+  }
+
 </style>
