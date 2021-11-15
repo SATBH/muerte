@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <h1> Nuestra Misión </h1>
+  <div class="text-justify space-y-2">
+    <h1 class="text-xl font-bold">Nuestra Misión</h1>
     <p>
       El calentamiento global es uno de los problemas mas grandes a los que 
       nos enfrentamos actualmente, a pesar de no ser un problema inminente, 
@@ -16,6 +16,10 @@
       e inversiones. Ademas que la rentabilidad de la produccion podria
       no superar a la de los combustibles fosiles.
     </p>
+    <figure class="py-2 text-center space-y-2">
+      <img src="@/assets/paneles-solares.jpg" class="mx-auto max-h-72"/>
+			<figcaption class="text-gray-500 text-sm italic">[FALTA] Descripcion de la imagen</figcaption>
+    </figure>
     <p>
       Siendo que es muy dificil que organismos externos realizen estas
       inversiones por los hechos ya mencionados. Hemos tomado una iniciativa,
@@ -32,28 +36,6 @@
       organización, enfocándonos a incrementar la eficiencia y ahorro en la
       utilización de la energía renovables. 
     </p>
-    <div class="image">
-      <img src="@/assets/paneles-solares.jpg"/>
-    </div>
   </div>
 </template>
 
-<style scoped>
-  div {
-    max-width: 800px;
-    margin: auto;
-  }
-
-  p {
-    text-align: justify;
-  }
-
-  .image {
-    background-color: white;
-  }
-
-  img {
-    width: 300px;
-  }
-
-</style>
