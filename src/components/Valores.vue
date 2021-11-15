@@ -1,5 +1,7 @@
 <template>
-  <Valor title="some" text="bar"/>
+	<div class="flex-colum gap-4">
+		<Valor title="some" text="bar"/>
+	</div>
 </template>
 
 <script> 
