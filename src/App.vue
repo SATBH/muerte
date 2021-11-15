@@ -22,7 +22,7 @@ export default {
 
 <style>
 #app {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', sans-serif;
   /*font-family: Avenir, Helvetica, Arial, sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

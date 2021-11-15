@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div :class="image">
 	</div>
 </template>
 
@@ -8,7 +8,7 @@ export default {
 	data() {
 		return {
 		}
-	}
+	},
 	props: ['image', 'title', 'text']
 }
 </script>
