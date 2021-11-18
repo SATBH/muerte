@@ -1,0 +1,39 @@
+<template>
+  <div class="overflow-scroll md:overflow-hidden flex gap-2 justify-around items-end">
+    <div v-for="[year, value] in yearly_temp" :key="year" class="flex-initial text-xs text-center">
+      {{value + 'º'}}
+      <div
+        :style="`height: ${(value - 13) * 100}px;`"
+        :class="`bg-gradient-to-t from-yellow-400 to-red-${value > 13.7 ? Math.floor(value) - 10 : 2}00`"
+        >
+      </div>
+      {{year}}
+    </div>
+  </div>
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        "yearly_temp": [
+          ["1881-1890", 13.68],
+          ["1891-1900", 13.67],
+          ["1901-1910", 13.59],
+          ["1911-1920", 13.64],
+          ["1921-1930", 13.76],
+          ["1931-1940", 13.89],
+          ["1941-1950", 13.95],
+          ["1951-1960", 13.92],
+          ["1961-1970", 13.93],
+          ["1971-1980", 13.95],
+          ["1981-1990", 14.12],
+          ["1991-2000", 14.26],
+          ["2001-2010", 14.47],
+        ]
+      }
+    }
+  }
+</script>
+
+
