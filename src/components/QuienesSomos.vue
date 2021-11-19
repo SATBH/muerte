@@ -6,7 +6,7 @@
     paneles solares. Nos especializamos en proyectos para domicilios y para la
     pequenna y mediana empresa."
   </p>
-  <img class="mx-auto my-4 w-64" src="@/assets/Logo2.jpeg"/>
+  <img class="mx-auto my-4" src="@/assets/logo.png"/>
     <h1 class="text-xl font-bold"> Nuestra Vision </h1>
     <p>
       Ser una empresa de reconocimiento nacional, que este al nivel de demandas

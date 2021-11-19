@@ -14,7 +14,7 @@ export default {
 	props: ['title', 'text', 'number'],
 	methods: {
 		log: () => {
-			console.log(number);
+			console.log(this.number);
 		},
 	}
 }
