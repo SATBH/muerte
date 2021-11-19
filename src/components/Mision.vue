@@ -78,7 +78,7 @@ export default {
     transform: translatey(0px);
   }
   50% {
-    transform: translatey(-20px);
+    transform: translatey(-30px);
   }
   100% {
     transform: translatey(0px);
@@ -86,7 +86,7 @@ export default {
 }
 
 .floating {
-  animation: float 5s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 </style>

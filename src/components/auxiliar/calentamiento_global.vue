@@ -1,10 +1,10 @@
 <template>
-  <div class="overflow-scroll md:overflow-hidden flex gap-2 justify-around items-end">
-    <div v-for="[year, value] in yearly_temp" :key="year" class="flex-initial text-xs text-center">
+  <div class="overflow-auto flex gap-1 justify-around items-end">
+    <div v-for="[year, value] in yearly_temp" :key="year" class="text-xs text-center">
       {{value + 'º'}}
       <div
         :style="`height: ${(value - 13) * 100}px;`"
-        :class="`bg-gradient-to-t from-yellow-400 to-red-${value > 13.7 ? Math.floor(value) - 10 : 2}00`"
+        :class="`grows bg-gradient-to-t from-yellow-400 to-red-${value > 13.7 ? Math.floor(value) - 10 : 2}00`"
         >
       </div>
       {{year}}
@@ -36,4 +36,15 @@
   }
 </script>
 
+<style scoped>
 
+.grows {
+	animation: growth 1s;
+}
+
+@keyframes growth {
+	from {
+		height: 0;
+	}
+}
+</style>

@@ -1,6 +1,6 @@
 <template>
-  <nav class="sticky top-0 w-full bg-white border-b-2 border-gray-200 font-medium flex justify-center gap-4 p-2 z-10">
-    <router-link class="block p-2 rounded hover:text-blue-500 transition-colors"
+  <nav class="shadow-xl sticky top-0 w-full text-white border-b-2 border-gray-200 font-medium flex justify-center gap-4 p-2 z-10">
+    <router-link class="link block p-2 rounded transition-colors"
 			v-for="(link, section) in sections" :key="section" :to="link">
       {{section}}
     </router-link>
@@ -21,3 +21,11 @@ export default {
 }
 </script>
 
+<style scoped>
+nav {
+	background-color: #FF7800;
+}
+.link:hover {
+	color: #FFBC97;
+}
+</style>
