@@ -1,5 +1,5 @@
 <template>
-  <div class="border-t-2 border-b-2 border-black pr-4 pl-4">
+  <div class="border-t-2 border-b-2 border-black p-1">
     <h1 class="text-center text-lg font-bold"> Temperatura promedio de cada decada </h1>
     <div class="overflow-auto flex gap-1 justify-around items-end">
       <div v-for="[year, value] in yearly_temp" :key="year" class="text-xs text-center">
