@@ -1,11 +1,14 @@
 <template>
-  <div class="border-t-2 border-b-2 border-black px-2 py-4">
-    <h1 class="text-center text-md font-bold"> Temperatura promedio de cada decada </h1>
-    <div class="overflow-auto flex gap-2 items-end">
-      <div v-for="[year, value] in yearly_temp" :key="year" class="divide-y flex-1 text-xs text-center">
-        {{value}}
-        <div v-bind:style="`height: ${(value - 13) * 100}px; background-size: auto 147px;`"
-             v-bind:class="`grows bg-gradient-to-t from-yellow-300 to-red-500 bg-bottom`"/>
+  <div class="border-t-2 border-b-2 border-black px-4 py-2">
+    <h1 class="text-center text-lg font-bold"> Temperatura promedio de cada decada </h1>
+    <div class="overflow-auto flex gap-2 justify-around items-end">
+      <div v-for="[year, value] in yearly_temp" :key="year" class="text-xs text-center">
+        {{value + 'º'}}
+        <div
+          :style="`height: ${(value - 13) * 100}px; background-size: auto 147px;`"
+            :class="`grows bg-gradient-to-t from-yellow-300 to-red-500 bg-bottom`"
+          >
+        </div>
         {{year}}
       </div>
     </div>
@@ -39,7 +42,7 @@
 <style scoped>
 
 .grows {
-	animation: growth 2s;
+	animation: growth 1s;
 }
 
 .text-xxs {
