@@ -1,53 +1,68 @@
 <template>
-  <div class="border-t-2 border-b-2 border-black p-1">
-    <h1 class="text-center text-lg font-bold"> Temperatura promedio de cada decada </h1>
-    <div class="overflow-auto flex gap-1 justify-around items-end">
-      <div v-for="[year, value] in yearly_temp" :key="year" class="text-xs text-center">
-        {{value + 'º'}}
-        <div
-          :style="`height: ${(value - 13) * 100}px;`"
-          :class="`grows bg-gradient-to-t from-yellow-400 to-red-${value > 13.7 ? Math.floor(value) - 10 : 2}00`"
-          >
-        </div>
-        {{year}}
+  <div>
+    <div  v-for="{cathegory, content} in productos" :key="cathegory">
+      <h1 class="text-2xl font-medium"> {{cathegory}} </h1>
+      <div class="grid grid-cols-2 gap-0.5 m-y-2">
+        <Producto v-for="product in content" v-bind="product" :key="product"/>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        "yearly_temp": [
-          ["1881-1890", 13.68],
-          ["1891-1900", 13.67],
-          ["1901-1910", 13.59],
-          ["1911-1920", 13.64],
-          ["1921-1930", 13.76],
-          ["1931-1940", 13.89],
-          ["1941-1950", 13.95],
-          ["1951-1960", 13.92],
-          ["1961-1970", 13.93],
-          ["1971-1980", 13.95],
-          ["1981-1990", 14.12],
-          ["1991-2000", 14.26],
-          ["2001-2010", 14.47],
-        ]
-      }
+import Producto from "./Producto.vue"
+export default {
+  data() {
+    return {
+      productos: [
+        {
+          cathegory: "Paneles solares",
+          content: [
+            {
+              name: "LNMH144",
+              pricing: "0.22$/Wp",
+              image: require("@/assets/LNMH144.jpg"),
+              info: {
+                tipo: "Monocristalino",
+                potencia: "435-460Wp",
+                region: "china"
+              }},
+            {
+              name: "LNMH144",
+              pricing: "0.22$/Wp",
+              image: require("@/assets/LNMH144.jpg"),
+              info: {
+                tipo: "Monocristalino",
+                potencia: "435-460Wp",
+                region: "china"
+              }},
+            {
+              name: "GPNE-S144",
+              pricing: "0.2$/Wp",
+              info: {
+                tipo: "Monocristalino",
+                potenciea: "425-445Wp",
+                region: "china"
+              },
+              image: require("@/assets/GPNE-S144.jpg")
+            },
+            //{name: "ZPM435-455", pricing: "0.25$/Wp", image: require("@/assets/Series:ZPM435-455.png")},
+            //{name: "PERC",       pricing: "0.25$/Wp", image: require("@/assets/Series:ZPM435-455.png")},
+          ]
+        },
+        {
+          cathegory: "Inversores fotovoltaicos",
+          content: []
+        },
+        {
+          cathegory: "Reguladores de carga",
+          content: []
+        }
+      ]
     }
-  }
+  },
+  components: {Producto}
+}
 </script>
 
-<style scoped>
 
-.grows {
-	animation: growth 1s;
-}
-
-@keyframes growth {
-	from {
-		height: 0;
-	}
-}
-</style>

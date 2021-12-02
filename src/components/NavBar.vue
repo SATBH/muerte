@@ -15,6 +15,7 @@ export default {
         "Quienes Somos": "/quienes_somos",
         "Nuestra Mision": "/mision",
         "Valores": "/valores",
+        "Productos": "/productos",
       }
     }
   }
